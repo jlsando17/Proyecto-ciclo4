@@ -54,18 +54,18 @@ export class PlanMascotaController {
     },
   })
   async create(
-    @param.path.string('id') id: typeof Plan.prototype.Id,
+    @param.path.string('id') id: typeof Plan.prototype.id,
     @requestBody({
       content: {
         'application/json': {
           schema: getModelSchemaRef(Mascota, {
             title: 'NewMascotaInPlan',
-            exclude: ['Id'],
+            exclude: ['id'],
             optional: ['planId']
           }),
         },
       },
-    }) mascota: Omit<Mascota, 'Id'>,
+    }) mascota: Omit<Mascota, 'id'>,
   ): Promise<Mascota> {
     return this.planRepository.mascotas(id).create(mascota);
   }

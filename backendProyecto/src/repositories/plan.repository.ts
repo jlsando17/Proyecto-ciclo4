@@ -6,11 +6,11 @@ import {MascotaRepository} from './mascota.repository';
 
 export class PlanRepository extends DefaultCrudRepository<
   Plan,
-  typeof Plan.prototype.Id,
+  typeof Plan.prototype.id,
   PlanRelations
 > {
 
-  public readonly mascotas: HasManyRepositoryFactory<Mascota, typeof Plan.prototype.Id>;
+  public readonly mascotas: HasManyRepositoryFactory<Mascota, typeof Plan.prototype.id>;
 
   constructor(
     @inject('datasources.Mongodb') dataSource: MongodbDataSource, @repository.getter('MascotaRepository') protected mascotaRepositoryGetter: Getter<MascotaRepository>,

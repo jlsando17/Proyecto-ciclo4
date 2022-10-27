@@ -7,7 +7,7 @@ export class ProductoServicio extends Entity {
     id: true,
     generated: true,
   })
-  Id?: string;
+  id?: string;
 
   @property({
     type: 'string',
@@ -34,10 +34,10 @@ export class ProductoServicio extends Entity {
   Proveedor: string;
 
   @property({
-    type: 'string',
+    type: 'number',
     required: true,
   })
-  Precio: string;
+  Precio: number;
 
 
   constructor(data?: Partial<ProductoServicio>) {

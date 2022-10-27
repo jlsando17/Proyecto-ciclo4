@@ -7,13 +7,13 @@ import {PlanRepository} from './plan.repository';
 
 export class MascotaRepository extends DefaultCrudRepository<
   Mascota,
-  typeof Mascota.prototype.Id,
+  typeof Mascota.prototype.id,
   MascotaRelations
 > {
 
-  public readonly usuario: BelongsToAccessor<Usuario, typeof Mascota.prototype.Id>;
+  public readonly usuario: BelongsToAccessor<Usuario, typeof Mascota.prototype.id>;
 
-  public readonly plan: BelongsToAccessor<Plan, typeof Mascota.prototype.Id>;
+  public readonly plan: BelongsToAccessor<Plan, typeof Mascota.prototype.id>;
 
   constructor(
     @inject('datasources.Mongodb') dataSource: MongodbDataSource, @repository.getter('UsuarioRepository') protected usuarioRepositoryGetter: Getter<UsuarioRepository>, @repository.getter('PlanRepository') protected planRepositoryGetter: Getter<PlanRepository>,

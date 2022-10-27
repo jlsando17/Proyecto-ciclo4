@@ -8,7 +8,7 @@ export class Usuario extends Entity {
     id: true,
     generated: true,
   })
-  Id?: string;
+  id?: string;
 
   @property({
     type: 'string',
@@ -51,6 +51,12 @@ export class Usuario extends Entity {
     required: true,
   })
   Rol: string;
+
+  @property({
+    type: 'string',
+    required: true,
+  })
+  Clave: string;
 
   @hasMany(() => Mascota)
   mascotas: Mascota[];

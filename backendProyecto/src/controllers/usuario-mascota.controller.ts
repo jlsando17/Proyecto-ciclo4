@@ -54,18 +54,18 @@ export class UsuarioMascotaController {
     },
   })
   async create(
-    @param.path.string('id') id: typeof Usuario.prototype.Id,
+    @param.path.string('id') id: typeof Usuario.prototype.id,
     @requestBody({
       content: {
         'application/json': {
           schema: getModelSchemaRef(Mascota, {
             title: 'NewMascotaInUsuario',
-            exclude: ['Id'],
+            exclude: ['id'],
             optional: ['usuarioId']
           }),
         },
       },
-    }) mascota: Omit<Mascota, 'Id'>,
+    }) mascota: Omit<Mascota, 'id'>,
   ): Promise<Mascota> {
     return this.usuarioRepository.mascotas(id).create(mascota);
   }

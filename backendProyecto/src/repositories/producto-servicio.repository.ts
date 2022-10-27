@@ -5,7 +5,7 @@ import {ProductoServicio, ProductoServicioRelations} from '../models';
 
 export class ProductoServicioRepository extends DefaultCrudRepository<
   ProductoServicio,
-  typeof ProductoServicio.prototype.Id,
+  typeof ProductoServicio.prototype.id,
   ProductoServicioRelations
 > {
   constructor(

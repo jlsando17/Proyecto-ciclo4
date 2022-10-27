@@ -5,7 +5,7 @@ import {Prospecto, ProspectoRelations} from '../models';
 
 export class ProspectoRepository extends DefaultCrudRepository<
   Prospecto,
-  typeof Prospecto.prototype.Id,
+  typeof Prospecto.prototype.id,
   ProspectoRelations
 > {
   constructor(

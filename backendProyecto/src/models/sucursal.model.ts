@@ -7,7 +7,7 @@ export class Sucursal extends Entity {
     id: true,
     generated: true,
   })
-  Id?: string;
+  id?: string;
 
   @property({
     type: 'string',

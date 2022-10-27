@@ -31,7 +31,7 @@ export class MascotaPlanController {
     },
   })
   async getPlan(
-    @param.path.string('id') id: typeof Mascota.prototype.Id,
+    @param.path.string('id') id: typeof Mascota.prototype.id,
   ): Promise<Plan> {
     return this.mascotaRepository.plan(id);
   }

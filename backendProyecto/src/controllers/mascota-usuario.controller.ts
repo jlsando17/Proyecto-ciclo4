@@ -31,7 +31,7 @@ export class MascotaUsuarioController {
     },
   })
   async getUsuario(
-    @param.path.string('id') id: typeof Mascota.prototype.Id,
+    @param.path.string('id') id: typeof Mascota.prototype.id,
   ): Promise<Usuario> {
     return this.mascotaRepository.usuario(id);
   }
