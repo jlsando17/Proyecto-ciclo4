@@ -24,6 +24,8 @@ export class UsuarioController {
   constructor(
     @repository(UsuarioRepository)
     public usuarioRepository : UsuarioRepository,
+    @service(AutenticacionService)
+    public servicioAutentificacion : AutenticacionService  
   ) {}
 
   @post('/usuarios')
@@ -44,7 +46,7 @@ export class UsuarioController {
     })
     usuario: Omit<Usuario, 'id'>,
   ): Promise<Usuario> {
-    return this.usuarioRepository.create(usuario);
+    let p = await this.usuarioRepository.create(usuario);
   }
 
   @get('/usuarios/count')
