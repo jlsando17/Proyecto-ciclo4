@@ -38,7 +38,7 @@ export class Usuario extends Entity {
     type: 'string',
     required: true,
   })
-  Correo: string;
+  Correo : string;
 
   @property({
     type: 'string',
