@@ -44,7 +44,7 @@ export class AutenticacionService {
 
   }
   GenerarTokenJWT(usuario:Usuario){
-    let token = jwt.sing({
+    let token = jwt.sign({
       data:{
         id: usuario.id,
         correo: usuario.Clave,
