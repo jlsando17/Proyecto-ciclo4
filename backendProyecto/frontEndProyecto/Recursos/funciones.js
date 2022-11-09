@@ -33,7 +33,7 @@ function RegistrarUsuario() {
   let correo = document.querySelector("#txtCorreo").value;
   let celular = document.querySelector("#txtCelular").value;
   let rol = document.querySelector("#txtRol").value;
-  let clave = document.querySelector("#txtClave").value;
+
 
   let url = 'http//localhost:3000/usuario';
   let datos = {
@@ -44,7 +44,7 @@ function RegistrarUsuario() {
     correo: correo,
     celular: celular,
     rol: rol,
-    clave: clave,
+
 
   };
   fetch(url, {
