@@ -60,7 +60,7 @@ export class UsuarioController {
       throw new HttpErrors[401]('Datos invalidos');
     }
   }
-  @authenticate('admin')
+  //@authenticate('admin')
   @post('/usuarios')
   @response(200, {
     description: 'Usuario model instance',
