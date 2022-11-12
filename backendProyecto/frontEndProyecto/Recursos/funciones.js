@@ -35,15 +35,15 @@ function RegistrarUsuario() {
   let rol = document.querySelector("#txtRol").value;
 
 
-  let url = 'http://localhost:3000/usuarios';
+  let url = 'http//localhost:3000/usuario';
   let datos = {
-    Documento: documento,
-    Nombre: nombre,
-    Apellido: apellido,
-    Ciudad: ciudad,
-    Correo: correo,
-    Celular: celular,
-    Rol: rol,
+    documento: documento,
+    nombre: nombre,
+    apellido: apellido,
+    ciudad: ciudad,
+    correo: correo,
+    celular: celular,
+    rol: rol,
 
 
   };
