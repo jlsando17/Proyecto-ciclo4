@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+}
+input{
+    border: 2px double blue;
+    text-align: center;
+    color: black;
+}
+#miDivision{
+    border: 15px inherit brown;
+    height: 100px;
+    width: 80%;
+}
+.fondoAzul{
+    background-color: blue;
+}
+.bordoBlanco{
+    border: 5px double white;
+}
+.centrar {
+    text-align: center;
+}
