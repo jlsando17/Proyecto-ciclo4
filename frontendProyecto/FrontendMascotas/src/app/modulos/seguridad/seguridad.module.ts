@@ -18,7 +18,6 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     SeguridadRoutingModule,
     FormsModule,
-    ReactiveFormsModule
   ]
 })
 export class SeguridadModule { }

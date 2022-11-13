@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IdentificacionComponent implements OnInit {
 
-  constructor(private fb: FormBuilder) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
