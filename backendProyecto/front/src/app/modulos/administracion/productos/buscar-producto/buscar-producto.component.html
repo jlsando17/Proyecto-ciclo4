@@ -1,1 +1,63 @@
-<p>buscar-producto works!</p>
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+  <button routerLink="../../inicio" class="btn btn-primary" type="submit">Menu</button>
+  <div class="col-md-2">
+    <label for="txtDocumento" class="form-label">Que Producto y/o Servicio deseas Buscar?</label>
+    <input type="text" class="form-control" id="txtDocumento" required>
+    <div class="invalid-feedback">
+      Campo requerido
+    </div>
+  </div>
+  <section>
+    <div class="col-12">
+      <button class="btn btn-success" type="submit">Buscar </button><br>
+
+    </div>
+  </section>
+
+  <table class="striped">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Proveedor</th>
+        <th>Precio</th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Producto</td>
+        <td>Purina</td>
+        <td>Bulto por 60 kilos</td>
+        <td>Dogchow</td>
+        <td>250.000</td>
+
+      </tr>
+      <tr>
+        <td>Servicio</td>
+        <td> Peluqueria</td>
+        <td>Corte de pelo de acuedo al cliente</td>
+        <td>Veterinaria</td>
+        <td>50.000</td>
+
+      </tr>
+      <tr>
+        <td>Producto</td>
+        <td>Juguete</td>
+        <td>Hueso comestible</td>
+        <td>nutcan</td>
+        <td>2.000</td>
+
+      </tr>
+
+    </tbody>
+  </table>
+</body>

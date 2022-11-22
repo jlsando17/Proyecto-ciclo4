@@ -1,1 +1,71 @@
-<p>buscar-persona works!</p>
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+  <button routerLink="../../inicio" class="btn btn-primary" type="submit">Menu</button>
+  <div class="col-md-2">
+    <label for="txtDocumento" class="form-label">Ingrese el Documento</label>
+    <input type="text" class="form-control" id="txtDocumento" required>
+    <div class="invalid-feedback">
+      Campo requerido
+    </div>
+  </div>
+  <section>
+    <div class="col-12">
+      <button class="btn btn-success" type="submit">Buscar Usuario</button><br>
+
+    </div>
+  </section>
+
+  <table class="striped">
+    <thead>
+      <tr>
+        <th>Documento</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Ciudad</th>
+        <th>Celular</th>
+        <th>Rol</th>
+        <th>Email</th>
+        <th>Contraseña</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1057588896</td>
+        <td>Jose Luis</td>
+        <td>Sandoval</td>
+        <td>Sogamoso</td>
+        <td>32256985</td>
+        <td>Administrador</td>
+        <td>jose@gmail.com</td>
+        <td>*********</td>
+      </tr>
+      <tr>
+        <td>1057588896</td>
+        <td> Luis</td>
+        <td>Mojica</td>
+        <td>cali</td>
+        <td>322523456985</td>
+        <td>Veterinario</td>
+        <td>luis@gmail.com</td>
+        <td>*********</td>
+      </tr>
+      <tr>
+        <td>10575454896</td>
+        <td>Maria</td>
+        <td>Peña</td>
+        <td>Medellin</td>
+        <td>3225erer6985</td>
+        <td>usuario</td>
+        <td>maria@gmail.com</td>
+        <td>*********</td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
